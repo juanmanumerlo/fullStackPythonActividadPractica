@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="https://kit.fontawesome.com/daf7d56fd5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header style="background-color:rgb(255, 150, 0);">
+        <nav>
+            <a href="/index.html" style="background-color:rgb(255, 100, 0);">Home</a>
+            <a href="/acercaDe.html" style="background-color:rgb(255, 100, 0);">Acerca de</a>
+            <a href="/contacto.html" style="background-color:rgb(255, 100, 0);">Contacto</a>
+            <a href="#" style="background-color:rgb(255, 100, 0);">Registro</a>
+            <a href="/sucursales.html" style="background-color:rgb(255, 100, 0);">Sucursales</a>
+        </nav>
+        <h1 style="text-align:center ;"><u>Registro</u> </h1>
+    </header>
+    <main>
+        <h2>Registrarse</h2>
+        <form action="/show_data.html" target="_blank">
+            <label for="nombre">Nombre:</label> <input type="text" name="nombre" placeholder="Ingrese su Nombre aqui"> <br><br>
+            <label for="apellido">Apellido:</label> <input type="text" name="apellido" placeholder="Ingrese su Apellido aqui"> <br><br>
+            <label for="direccion">Direccion:</label> <input type="text" name="direccion" placeholder="Ingrese su Direccion aqui"> <br><br>
+            <label for="ciudad">Ciudad:</label> <input type="text" name="ciudad" value="San Fernando del Valle de Catamarca"> <br><br>
+            <label for="cod_postal">Cod. Postal:</label> <input type="number" name="cod_postal" placeholder="Ingrese su Codigo Postal aqui"> <br><br>
+            <label for="fec_nac">Fecha de Nacimiento:</label> <input type="date" name="fec_nac"> <br><br>
+            <p>
+                Genero:
+                <input type="radio" name="genero" id="genero" value="Hombre" checked>Hombre
+                <input type="radio" name="genero" id="genero" value="mujer">Mujer
+                <input type="radio" name="genero" id="genero" value="otro">Otro
+            </p>
+            <p>
+                Estudios:
+                <input type="checkbox" name="estudio" id="estudio" value="primario">Primario
+                <input type="checkbox" name="estudio" id="estudio" value="secundario">Secundario
+                <input type="checkbox" name="estudio" id="estudio" value="terciario">Terciario
+                <input type="checkbox" name="estudio" id="estudio" value="universitario">Universitario
+                <input type="checkbox" name="estudio" id="estudio" value="otro">Otro
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer style="background-color: rgb(255, 150,0); text-align: center;">
+        <br>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/5491134567890" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <p style>Derechos Reservados (c) 2022</p>
+        <br>
+    </footer>
+</body>
+</html>
