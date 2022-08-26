@@ -22,3 +22,26 @@ footer{
     text-align: center;
     margin-top: 10px;
 }
+
+.card_masbuscados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mas_buscado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+}
