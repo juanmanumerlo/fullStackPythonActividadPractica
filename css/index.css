@@ -7,13 +7,16 @@
     box-sizing: border-box;
 }
 
+main{
+    padding: 15px;
+}
+
 header{
-    background-color: black;
+    padding: 10px;
+    background-color: orange;
     color: white;
     height: 10vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
+    width: 100%;
 }
 
 
@@ -21,8 +24,8 @@ nav{
     float: right;
 }
 
-.nav{
-    background-color: gray;
+.btn{
+    background-color: orangered;
     color: white;
     padding: 5px;
     border-radius: 5px;
@@ -30,43 +33,40 @@ nav{
 }
 
 footer{
-    background-color: black;
+    background-color: orange;
     color: white;
     text-align: center;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .card_destacado{
-    border: 1px solid red;
-    height: 30vh;
-    width: 75vw;
+    width: 75%;
+    overflow: hidden;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, 
+                rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .sobre_nosotros{
-    border: 1px solid green;
     height: 20vh;
-    width: 75vw;
+    width: 50%;
 }
 
 .card_masbuscados{
-    border: 1px solid blue;
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-sizing: border-box;
     width: 100%;
     height: 20vh;
 }
 
 h1{
-    font-family: 'Sacramento', cursive;
-    font-size: 3em;
-    text-align: center;
+    font-size: 2em;
 }
 
 h3{
-    font-family: 'Sacramento', cursive;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .redes_sociales{
@@ -74,11 +74,11 @@ h3{
 }
 
 .imagen_destacada{
-    height: 50px;
+    height: 30vh;
 }
 
 .imagen{
-    height: 50px;
+    height: 15vh;
 }
 
 .card_contenido{
@@ -86,3 +86,11 @@ h3{
     flex-direction: row;
 }
 
+.description{
+    padding: 10px;
+    text-align: justify;
+}
+
+.card_masbuscados > .mas_buscado{
+    width: 30vw;
+}
