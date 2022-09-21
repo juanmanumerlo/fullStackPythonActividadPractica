@@ -9,6 +9,7 @@
 
 main{
     padding: 15px;
+    margin-top: 100px;
 }
 
 header{
@@ -17,6 +18,8 @@ header{
     color: white;
     height: 10vh;
     width: 100%;
+    position: fixed;
+    top: 0px;
 }
 
 
@@ -49,7 +52,7 @@ footer{
 
 .sobre_nosotros{
     height: 20vh;
-    width: 50%;
+    width: 30%;
 }
 
 .card_masbuscados{
@@ -93,4 +96,11 @@ h3{
 
 .card_masbuscados > .mas_buscado{
     width: 30vw;
+}
+
+.btn_inicio{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
 }
