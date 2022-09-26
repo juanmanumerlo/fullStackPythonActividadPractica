@@ -46,6 +46,9 @@ footer{
 .card_destacado{
     width: 75%;
     overflow: hidden;
+}
+
+.card_destacado:hover{
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, 
                 rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
@@ -104,3 +107,4 @@ h3{
     width: 50px;
     border-radius: 50px;
 }
+
