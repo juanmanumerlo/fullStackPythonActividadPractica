@@ -1,0 +1,13 @@
+header{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+nav{
+    float: right;
+}

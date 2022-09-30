@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/registro.css">
     <script src="https://kit.fontawesome.com/daf7d56fd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+        <h1>Recipe</h1>
         <nav>
-            <a class="nav" href="/templates/index.html">Home</a>
-            <a class="nav" href="/templates/acercaDe.html">Acerca de</a>
-            <a class="nav" href="/templates/contacto.html">Contacto</a>
-            <a class="nav" href="#">Registro</a>
-            <a class="nav" href="/templates/sucursales.html">Sucursales</a>
+            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="/templates/acercaDe.html">Sobre nosotros</a>
+            <a class="btn" href="/templates/registro.html">Registro</a>
+            <a class="btn" href="/templates/cargar_receta.html">Subir Receta</a>
+            <input class="busqueda" type="search" name="buscar_receta" id="buscar_receta" placeholder="Buscar receta">
+            <button class="btn" type="submit">Buscar</button>
         </nav>
-        <h1>Registro</h1>
     </header>
     <main>
         <h2>Registrarse</h2>
+        <br><br>
         <form action="/templates/show_data.html" target="_blank">
             <label for="nombre">Nombre:</label> <input type="text" name="nombre" placeholder="Ingrese su Nombre aqui"> <br><br>
             <label for="apellido">Apellido:</label> <input type="text" name="apellido" placeholder="Ingrese su Apellido aqui"> <br><br>
@@ -29,13 +31,13 @@
             <label for="cod_postal">Cod. Postal:</label> <input type="number" name="cod_postal" placeholder="Ingrese su Codigo Postal aqui"> <br><br>
             <label for="fec_nac">Fecha de Nacimiento:</label> <input type="date" name="fec_nac"> <br><br>
             <p>
-                Genero:
+                <h4>Genero:</h4>
                 <input type="radio" name="genero" id="genero" value="Hombre" checked>Hombre
                 <input type="radio" name="genero" id="genero" value="mujer">Mujer
                 <input type="radio" name="genero" id="genero" value="otro">Otro
             </p>
             <p>
-                Estudios:
+                <h4>Estudios:</h4>
                 <input type="checkbox" name="estudio" id="estudio" value="primario">Primario
                 <input type="checkbox" name="estudio" id="estudio" value="secundario">Secundario
                 <input type="checkbox" name="estudio" id="estudio" value="terciario">Terciario
