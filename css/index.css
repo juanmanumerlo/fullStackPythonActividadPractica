@@ -60,11 +60,3 @@ h3{
 .card_masbuscados > .mas_buscado{
     width: 30vw;
 }
-
-.btn_inicio{
-    background-color: aqua;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-}
-
