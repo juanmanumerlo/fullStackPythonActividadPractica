@@ -5,23 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contacto.css">
     <script src="https://kit.fontawesome.com/daf7d56fd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+        <h1>Recipe</h1>
         <nav>
-            <a class="nav" href="/templates/index.html">Home</a>
-            <a class="nav" href="/templates/acercaDe.html">Acerca de</a>
-            <a class="nav" href="#">Contacto</a>
-            <a class="nav" href="/templates/registro.html">Registro</a>
-            <a class="nav" href="/templates/sucursales.html">Sucursales</a>
+            <a class="btn" href="/templates/index.html">Home</a>
+            <a class="btn" href="/templates/registro.html">Registro</a>
+            <a class="btn" href="/templates/cargar_receta.html">Subir Receta</a>
         </nav>
-        <h1>Contacto</h1>
     </header>
     <main>
         <h2>Contacto</h2>
-        <p>Para contactarte con nosotros, envianos un mail a <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+        <form action="">
+            <p>Nombre:</p>
+            <input type="text" class="field"><br>
+            <br><p>Correo electrónico:</p>
+            <input type="text" class="field"><br>
+            <br><p>Asunto:</p>
+            <input type="text" class="field"><br>
+            <br><p>Mensaje:</p>
+            <textarea class="field"></textarea><br>
+            <br><p class="center-content"><input type="button" class="btn btn-form" value="Enviar"></p>
+        </form>
     </main>
     <footer>
         <br>
