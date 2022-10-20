@@ -3,11 +3,11 @@
 @import url(general.css);
 @import url(header.css);
 
-<<<<<<< HEAD
 [class*="col-"] {
     float: left;
     padding: 15px;
-=======
+}
+
 body{ 
     
     background-image: url(../img/fondo2.jpg);
@@ -17,13 +17,11 @@ body{
 
 
 }
+
 main{
     padding: 15px;
     margin-top: 5%;
     margin-bottom: 20%;
-    
-    
->>>>>>> 8ece66af0269e291a591bd7ac680da0fdb03c949
 }
 
 .col-1 {width: 8.33%;}
@@ -39,12 +37,11 @@ main{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-<<<<<<< HEAD
 .row::after {
     content: "";
     clear: both;
     display: table;
-=======
+}
 
 nav{
     float: right;
@@ -67,8 +64,6 @@ footer{
     padding: 1px;
     height: 10vh;
     width: 100%;
-
->>>>>>> 8ece66af0269e291a591bd7ac680da0fdb03c949
 }
 
 .card_destacado{
@@ -135,15 +130,11 @@ h3{
     width: 30vw;
 }
 
-<<<<<<< HEAD
-
-=======
 .btn_inicio{
     background-color: aqua;
     height: 50px;
     width: 50px;
-    border-radius: 50px;
-   
+    border-radius: 50px;   
 }
 
 #cardb{
@@ -152,6 +143,4 @@ h3{
     align-content: space-around;
     width: 100%;
     min-width: 200px;
-
 }
->>>>>>> 8ece66af0269e291a591bd7ac680da0fdb03c949
