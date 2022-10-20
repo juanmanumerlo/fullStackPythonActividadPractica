@@ -2,6 +2,13 @@ footer{
     background-color: orange;
     color: white;
     text-align: center;
+    align-items: center;
+    align-content: space-around;
+    padding: 1px;
     height: 10vh;
     width: 100%;
+}
+
+.redes_sociales{
+    color: white;
 }

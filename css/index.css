@@ -3,25 +3,15 @@
 @import url(general.css);
 @import url(header.css);
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
 body{ 
-    
     background-image: url(../img/fondo2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
 
 main{
-    padding: 15px;
-    margin-top: 5%;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 }
 
 .col-1 {width: 8.33%;}
@@ -43,29 +33,6 @@ main{
     display: table;
 }
 
-nav{
-    float: right;
-}
-
-.btn{
-    background-color: orangered;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    height: max-content;
-}
-
-footer{
-    background-color: orange;
-    color: white;
-    text-align: center;
-    align-items: center;
-    align-content: space-around;
-    padding: 1px;
-    height: 10vh;
-    width: 100%;
-}
-
 .card_destacado{
     height: 50%;
     width: 75%;
@@ -78,9 +45,8 @@ footer{
 }
 
 .sobre_nosotros{
-    padding: 20vh;
-    height: 20vh;
-    width: 100%;
+    height: 10vh;
+    width: 50%;
 }
 
 .card_masbuscados{
@@ -90,8 +56,8 @@ footer{
     width: 100%;
     height: 40vh;
     margin: 0px;
-    justify-content: center;
-    overflow: scroll;
+    align-content: space-around;
+    min-width: 200px;
 }
 
 h1{
@@ -100,10 +66,6 @@ h1{
 
 h3{
     font-size: 2em;
-}
-
-.redes_sociales{
-    color: white;
 }
 
 .imagen_destacada{
@@ -131,21 +93,54 @@ h3{
 }
 
 .btn_inicio{
-    background-color: aqua;
+    background-color: orangered;
     height: 50px;
     width: 50px;
-    border-radius: 50px;   
+    border-radius: 50px;
+    float: right;   
 }
 
-#cardb{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    width: 100%;
-    min-width: 200px;
-}
+@media (max-width: 600px) {
+    main{
+        margin-top: 5%;
+        margin-bottom: 20%;
+    }
 
-.logo{
-    width: 80px;
-    height: 80px;
+    .imagen_destacada{
+        height: 60%;
+        width: 75%;
+    }
+    
+    .imagen{
+        height: 50%;
+        width: 50%;
+    }
+
+    .card_contenido{
+        display: block;
+    }
+
+    .card_masbuscados{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 10px 0px;
+    }
+    
+    .card_masbuscados > .mas_buscado{
+        width: 100%;
+    }
+
+    .card_destacado{
+        padding: 30px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sobre_nosotros{
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 30px 0px;
+    }
 }
