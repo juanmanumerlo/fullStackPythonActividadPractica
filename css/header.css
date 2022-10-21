@@ -26,8 +26,8 @@ nav{
 
 .logo:hover{
     animation-name: moverse;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 2s;  
+    animation-iteration-count: infinite;
 
 }
 
@@ -45,8 +45,27 @@ nav{
 }
 
 @keyframes moverse {
-    from {background-color: red;}
-    to {background-color: yellow;}
+    0%, 7% {
+        transform: rotateZ(0);
+      }
+      15% {
+        transform: rotateZ(-15deg);
+      }
+      20% {
+        transform: rotateZ(10deg);
+      }
+      25% {
+        transform: rotateZ(-10deg);
+      }
+      30% {
+        transform: rotateZ(6deg);
+      }
+      35% {
+        transform: rotateZ(-4deg);
+      }
+      40%, 100% {
+        transform: rotateZ(0);
+      }
 }
 
 @media (max-width: 960px){
