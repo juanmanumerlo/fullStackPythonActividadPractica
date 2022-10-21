@@ -24,6 +24,13 @@ nav{
     height: 80px;
 }
 
+.logo:hover{
+    animation-name: moverse;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+}
+
 .checkbtn{
     font-size: 40px;
     color: white;
@@ -37,7 +44,19 @@ nav{
     display: none;
 }
 
-@media (max-width: 600px) {
+@keyframes moverse {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+@media (max-width: 960px){
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 775px) {
     .checkbtn{
         display: block;
     }
@@ -60,5 +79,20 @@ nav{
 
     #check:checked ~ menu {
         left: 0;
+    }
+
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    header{
+        padding: 0;
+        margin: 0;
+    }
+
+    nav{
+        margin: 0;
+        padding: 0;
     }
 }
