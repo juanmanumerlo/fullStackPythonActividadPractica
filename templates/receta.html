@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receta</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://kit.fontawesome.com/daf7d56fd5.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <a class="nav" href="/templates/index.html">Home</a>
-            <a class="nav" href="/templates/acercaDe.html">Acerca de</a>
-            <a class="nav" href="/templates/contacto.html">Contacto</a>
-            <a class="nav" href="/templates/registro.html">Registro</a>
-            <a class="nav" href="/templates/sucursales.html">Sucursales</a>
-        </nav>
-        <h1>Receta</h1>
-    </header>
+    <head>
+        <meta charset="UTF-16">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Receta</title>
+        <link rel="stylesheet" href="/css/receta.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&family=Nunito" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/daf7d56fd5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="home"><img src="/img/Logo recetas.png" class="logo" alt="recetas"></a>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+                <div class="menu">
+                    <a class="btn" href="/templates/index.html">Home</a>
+                    <a class="btn" href="/templates/registro.html">Registro</a>
+                    <a class="btn" href="/templates/cargar_receta.html">Subir Receta</a>
+                    <input class="busqueda" type="search" name="buscar_receta" id="buscar_receta" placeholder="Buscar receta">
+                    <button class="btn" type="submit">Buscar</button>
+                </div>
+            </nav>
+        </header>
     <main>
         <h2>Bizcochuelo</h2>
         <img src="/img/bizcochuelo-casero2ok.jpg" alt="Bizcochuelo" width="500" height="300">
@@ -68,12 +75,13 @@
         </ul>
     </main>
     <footer>
-        <br>
-        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://wa.me/5491134567890" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    
+        <a class="redes_sociales" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="redes_sociales" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="redes_sociales" href="https://wa.me/5491134567890" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
         <p style>Derechos Reservados (c) 2022</p>
-        <br>
+        
     </footer>
 </body>
 </html>
