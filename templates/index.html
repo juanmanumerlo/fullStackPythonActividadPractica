@@ -32,7 +32,7 @@
             <div v-for="receta in listaReceta" class="card_destacado">
                 <h3>{{receta.nombre}}</h3>
                 <div class="card_contenido">
-                    <img class="imagen_destacada" src="receta.photoUrl" alt="Bizcochuelo">
+                    <img class="imagen_destacada" :src="receta.photoUrl" alt="Bizcochuelo">
                     <div class="description">
                         <p>{{receta.directions}}</p>
                         <br>
@@ -131,6 +131,7 @@
                 try {
                     let res = await axios(this.url);
                     this.listaReceta = res.data;
+                    console.log(res);
                     this.completo = !this.completo 
                     
                 } catch (error) {
@@ -138,6 +139,9 @@
                 }
             }
     
+        },
+        created(){
+            this.getDataAXIOS()
         }
     
     }
