@@ -30,9 +30,9 @@
         <main>
             <h2>Receta Destacada</h2>
             <div v-for="receta in listaReceta" class="card_destacado">
-                <h3>{{receta.nombre}}</h3>
+                <h3>{{receta.title}}</h3>
                 <div class="card_contenido">
-                    <img class="imagen_destacada" :src="receta.photoUrl" alt="Bizcochuelo">
+                    <img class="imagen_destacada" :src="receta.photoUrl" :alt="receta.title">
                     <div class="description">
                         <p>{{receta.directions}}</p>
                         <br>
@@ -95,60 +95,7 @@
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
-    <script>
-    
-    let root={
-        data:function(){
-            return{
-                url:'https://api.sampleapis.com/recipes/recipes',
-                listaReceta:[],
-                completo:false
-            }
-        },
-        methods:{
-            clickSelector:function($event){
-                console.log($event.target.innerHTML)
-                this.value = $event.target.innerHTML
-            },
-            getData:function(){
-                fetch(this.url)
-                .then(resp => resp.json())
-                .then(data => this.listaReceta = data)
-                .catch(e => console.log(e))
-            },
-            getDataASYNC: async function(){
-                try{
-    
-                    let data = await fetch(this.url);
-                    let dataFinal = await data.json();
-                    this.listaReceta = dataFinal;
-                    this.completo = !this.completo
-                }catch(e){
-                    console.log(e)
-                }
-            },
-            getDataAXIOS: async function(){
-                try {
-                    let res = await axios(this.url);
-                    this.listaReceta = res.data;
-                    console.log(res);
-                    this.completo = !this.completo 
-                    
-                } catch (error) {
-                    console.log(error);
-                }
-            }
-    
-        },
-        created(){
-            this.getDataAXIOS()
-        }
-    
-    }
-    
-    let appRuth = Vue.createApp(root).mount('#ruth');
-    
-    </script>
+    <script src="/js/index.js"></script>
     <footer>
     
         <a class="redes_sociales" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>

@@ -19,7 +19,6 @@ let root={
         },
         getDataASYNC: async function(){
             try{
-
                 let data = await fetch(this.url);
                 let dataFinal = await data.json();
                 this.listaReceta = dataFinal;
@@ -32,6 +31,7 @@ let root={
             try {
                 let res = await axios(this.url);
                 this.listaReceta = res.data;
+                console.log(res);
                 this.completo = !this.completo 
                 
             } catch (error) {
@@ -39,6 +39,9 @@ let root={
             }
         }
 
+    },
+    created(){
+        this.getDataAXIOS()
     }
 
 }
