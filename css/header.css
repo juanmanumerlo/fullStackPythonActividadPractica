@@ -1,7 +1,6 @@
 @import url(general.css);
 
 header{
-    position: fixed;
     padding: 15px;
     background-color: orange;
     color: white;
@@ -92,6 +91,7 @@ header{
 }
 
 .menu a{
+    margin-top: 10%;
     padding: 2rem;
     width: inherit;
     display: block;
@@ -108,12 +108,7 @@ header{
 }
 
 .busqueda{
-    position: fixed;
     z-index: 999;
-    top: 1vh;
-    right: 50%;
-    width: 4rem;
-    height: 4rem;
     padding: 0;
     display: flex;
     justify-content: center;
