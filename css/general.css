@@ -10,3 +10,7 @@
 main{
     padding: 15px;
 }
+
+body{ 
+    background-image: url("/img/fondo.jpg");
+}
