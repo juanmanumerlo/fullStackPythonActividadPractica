@@ -35,15 +35,19 @@
     <div id="ruth">
         <main>
             <h2>Receta Destacada</h2>
-            <div v-for="receta in listaReceta" class="card_destacado">
-                <h3>{{receta.title}}</h3>
-                <div class="card_contenido">
-                    <img class="imagen_destacada" :src="receta.photoUrl" :alt="receta.title">
-                    <div class="description">
-                        <p>{{receta.directions}}</p>
-                        <br>
-                        <a class="btn" href="/templates/receta.html">Ver Receta</a>
+            <div class="slider">
+                <div class="slider-slides">
+                    <div v-for="receta in listaReceta" class="slider-slide active">
+                        <div class="id-receta">
+                            <h3>{{receta.id}}</h3>
+                        </div>
+                        <a class="receta" href="/templates/receta.html"><h3>{{receta.title}}</h3></a>
+                        <img class="img" :src="receta.photoUrl" :alt="receta.title">
                     </div>
+                </div>
+                <div class="slider-btns">
+                    <a class="prev" href="">&laquo;</a>
+                    <a class="next" href="">&raquo;</a>
                 </div>
             </div>
             <div class="clearfix"></div><div class="clearfix"></div>
