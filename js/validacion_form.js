@@ -16,7 +16,7 @@ form.addEventListener("submit", e=>{
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     parrafo.innerHTML = ""
     if(nombre.value.length <6){
-        warnings += `El nombre no es valido <br>`
+        warnings += `El nombre es demasiado corto <br>`
         entrar = true
     }
     if(!regexEmail.test(email.value)){
