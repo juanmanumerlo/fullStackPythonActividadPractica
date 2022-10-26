@@ -92,11 +92,22 @@ h3{
 }
 
 .btn_inicio{
+    position: relative;
     background-color: orangered;
     height: 50px;
     width: 50px;
     border-radius: 50px;
     float: right;   
+}
+
+.btn_inicio i{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    color: orange;
 }
 
 .slider{
