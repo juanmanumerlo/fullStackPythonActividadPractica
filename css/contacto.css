@@ -4,3 +4,13 @@
 @import url(button.css);
 @import url(form.css);
 
+#enviarMail{
+   opacity: 0;
+}
+.warnings{
+   width: 200px;
+   text-align: center;
+   margin: auto;
+   color: orange;
+   padding-top: 20px;
+}
