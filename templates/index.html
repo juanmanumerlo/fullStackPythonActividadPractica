@@ -4,7 +4,7 @@
     <meta charset="UTF-16">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe</title>
+    <title>Recetazos</title>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,11 +38,7 @@
             <div class="slider">
                 <div class="slider-slides">
                     <div v-for="receta in listaReceta">
-                        <div v-if="receta.id == 1" class="slider-slide active">
-                            <a class="receta" href="/templates/receta.html"><h3>{{receta.title}}</h3></a>
-                            <img class="img" :src="receta.photoUrl" :alt="receta.title">
-                        </div>
-                        <div v-else class="slider-slide">
+                        <div class="slider-slide active">
                             <a class="receta" href="/templates/receta.html"><h3>{{receta.title}}</h3></a>
                             <img class="img" :src="receta.photoUrl" :alt="receta.title">
                         </div>
