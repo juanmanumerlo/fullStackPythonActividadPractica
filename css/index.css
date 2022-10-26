@@ -129,18 +129,19 @@ h3{
 
 .slider-slide h3{
     position: absolute;
-    height: 100%;
+    bottom: 1vh;
+    height: -100%;
     width: 100%;
-    color: #000;
+    color: #fff;
     font-weight: bold;
-    background-color: rgba(255, 166, 0, 0.3);
+    background-color: rgba(255, 166, 0, 0.8);
 }
 
 .slider-slide img{
     height: inherit;
     width: inherit;
     object-fit: cover;
-    object-position: 50% 0%;
+    object-position: 50% 50%;
 }
 
 .slider-btns{
@@ -149,7 +150,7 @@ h3{
     top: 50%;
     display: flex;
     justify-content: space-between;
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -159,7 +160,8 @@ h3{
     height: 4rem;
     border-radius: 50%;
     text-decoration: none;
-    color: orange;
+    color: #fff;
+    background-color: orange;
     transition: all 0.3s ease;
 }
 

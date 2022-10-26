@@ -1,6 +1,8 @@
 @import url(general.css);
 
 header{
+    position: sticky;
+    z-index: 997;
     padding: 15px;
     background-color: orange;
     color: white;
