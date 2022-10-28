@@ -4,17 +4,18 @@
         <meta charset="UTF-16">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Recetazos - Contacto</title>
+        <title>Contacto</title>
         <link rel="stylesheet" href="/css/contacto.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&family=Nunito" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/daf7d56fd5.js" crossorigin="anonymous"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/daf7d56fd5.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <a href="/templates/index.html" class="home"><img src="/img/Logo recetas.png" class="logo" alt="recetas"></a>
+            <a href="#" class="home"><img src="/img/Logo recetas.png" class="logo" alt="recetas"></a>
             <button class="panel-btn hamburger hamburger--vortex" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -24,30 +25,50 @@
                 <nav class="menu">
                     <a href="/templates/index.html">Home</a>
                     <a href="/templates/registro.html">Registro</a>
-                    <a href="/templates/contacto.html">Contacto</a>
-                    <!-- <div class="busqueda">
+                    <a href="/templates/cargar_receta.html">Subir Receta</a>
+                    <div class="busqueda">
                         <input class="busqueda" type="search" name="buscar_receta" id="buscar_receta" placeholder="Buscar receta">
                         <button class="btn" type="submit">Buscar</button>
-                    </div> -->
+                    </div>
                 </nav>
             </aside>
         </header>
     <main>
         <h2>Contacto</h2>
-        <form class="form" action="" id="form">
-            <label for="name">Nombre y Apellido</label>
-            <input type="text" class="field" name="name" id="name" placeholder="Ingrese su Nombre y Apellido" required><span class="barra"></span>
-            <label for="email">Correo electrónico</label>
-            <input type="text" class="field" name="email" id="email" placeholder="Ingrese su email aqui" required><span class="barra"></span>
-            <label for="asunto">Asunto</label>
-            <input type="text" class="field" id="Asunto" required><span class="barra"></span>
-            <label for="message">Mensaje</label>
-            <textarea class="field" id="message" cols="30" rows="10" required></textarea><br>
-            <br><button type="submit" class="btn primary full">Enviar</button>
-            <p class="warnings" id="warnings"></p>
-            </div>
-        </form>
-        <a href="mailto:juanmanuelmerlo@gmail.com" id="enviarMail">mail</a>
+        <form action="https://formsubmit.co/facundo.martinez.fms@gmail.com" method="POST" id="form">
+                    <div class="grupo">
+                        <h3>Nombre y apellido</h3>
+                        <label for=""></label>
+                        <input type="text" name="Nombre" id="name" ><span class="barra"></span>
+                        
+                    </div>
+                    <div class="grupo">
+                        <h3>Email</h3>
+                        <label for=""></label>
+                        <input type="email" name="email" id="name" ><span class="barra"></span>
+                        
+                    </div>
+                    <div class="grupo">
+                        <h3>Asunto</h3>
+                        <label for=""></label>
+                        <input type="text" name="asunto" id="name" ><span class="barra"></span>
+                        
+                    </div>
+                    <div class="grupo">
+                        <h3>Mensaje</h3>
+                        <label for=""></label>
+                        <textarea class="field" id="name" cols="30" rows="10"></textarea><br>
+                        <br><p class="center-content">
+                    <button type="submit">ENVIAR</button>
+                    <p class="warnings" id="warnings"></p>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/templates/contacto.html">
+                <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+        <script src="/js/contacto.js"></script>
+
+
     </main>
     <footer>
     
@@ -58,6 +79,6 @@
         <p style>Derechos Reservados (c) 2022</p>
         
     </footer>
-    <script src="/js/contacto.js" type="module"></script>
+    <script src="/js/index.js" type="module"></script>
 </body>
 </html>
