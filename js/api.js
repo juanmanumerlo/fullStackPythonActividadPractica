@@ -30,7 +30,7 @@ let root={
         getDataAXIOS: async function(){
             try {
                 let res = await axios(this.url);
-                this.listaReceta = res.data;
+                this.listaReceta = Array.prototype.slice.call(res.data);
                 console.log(res);
                 this.completo = !this.completo 
                 

@@ -38,27 +38,11 @@
             <div class="slider">
                 <div class="slider-slides">
                     <div v-for="receta in listaReceta">
-                        <div class="slider-slide active">
-                            <a class="receta" href="/templates/receta.html"><h3>{{receta.title}}</h3></a>
+                        <div class="slider-slide active" id="receta">
+                            <a class="receta" href="/templates/receta.html" :data-id="receta.id"><h3>{{receta.title}}</h3></a>
                             <img class="img" :src="receta.photoUrl" :alt="receta.title">
                         </div>
                     </div>
-                    <!-- <div class="slider-slide">
-                        <img src="https://placeimg.com/400/400/animals" alt="animals">
-                    </div>
-                    <div class="slider-slide">
-                        <img src="https://placeimg.com/400/400/tech" alt="tech">
-                    </div> -->
-                    <!-- <div v-for="receta in listaReceta">
-                        <div v-if="receta.id == 1" class="slider-slide active">
-                            <a class="receta" href="/templates/receta.html"><h3>{{receta.title}}</h3></a>
-                            <img class="img" :src="receta.photoUrl" :alt="receta.title">
-                        </div>
-                        <div class="slider-slide">
-                            <a class="receta" href="/templates/receta.html"><h3>{{receta.title}}</h3></a>
-                            <img class="img" :src="receta.photoUrl" :alt="receta.title">
-                        </div>
-                    </div> -->
                 </div>
                 <div class="slider-btns">
                     <a class="prev" href="#">&laquo;</a>
@@ -75,7 +59,7 @@
                         <div class="card_contenido">
                             <img class="imagen" :src="receta.photoUrl" :alt="receta.title">
                             <div class="description">
-                                <p>{{receta.ingredients}}</p>
+                                <p>{{receta.description}}</p>
                                 <br>
                                 <a class="btn" href="/templates/receta.html">Ver Receta</a>
                             </div>
