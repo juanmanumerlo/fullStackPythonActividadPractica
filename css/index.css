@@ -180,6 +180,10 @@ h3{
     color: orangered;
 }
 
+.google{
+    float: right;
+}
+
 @media (max-width: 960px){
     main{
         margin-top: 5%;

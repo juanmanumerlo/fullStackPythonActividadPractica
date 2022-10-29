@@ -4,7 +4,7 @@
 @import url(general.css);
 @import url(header.css);
 
-.Registrarse{
+.registrarse{
     text-align: center;
 
 
@@ -25,7 +25,7 @@ form .grupo{
 }
 
 input{
-    background: none;
+    background: white;
     color: orange;
     font-size: 18px;
     padding: 10px 10px 10px 5px;

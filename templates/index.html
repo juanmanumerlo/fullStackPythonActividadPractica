@@ -34,6 +34,7 @@
     </header>
     <div id="ruth">
         <main>
+            <div id="google_translate_element" class="google"></div>
             <h2>Receta Destacada</h2>
             <div class="slider">
                 <div class="slider-slides">
@@ -94,6 +95,13 @@
         <p style>Derechos Reservados (c) 2022</p>
         
     </footer>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es,ca,eu,gl,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+    </script>
+        
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="/js/index.js" type="module"></script>
