@@ -15,28 +15,62 @@
 </head>
 <body>
     <header>
-        <a href="#" class="home"><img src="/img/Logo recetas.png" class="logo" alt="recetas"></a>
-        <button class="panel-btn hamburger hamburger--vortex" type="button">
+        <nav>
+            <div class="logo">
+                <img src="/img/Logo recetas.png" alt="Recetazos">
+            </div>
+            <ul>
+                <li><a ref="#home">Home</a> </li>
+                <li><a ref="#recetas">Recetas</a></li>
+                <li><a ref="#sobre_nosotros">Sobre Nosotros</a></li>
+                <li><a ref="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+        </nav>
+        <!-- <button class="panel-btn hamburger hamburger--vortex" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
-        </button>
-        <aside class="panel">
+        </button> -->
+        <div id="google_translate_element" class="google"></div>
+        <!-- <aside class="panel">
             <nav class="menu">
                 <a href="#">Home</a>
                 <a href="/templates/registro.html">Registro</a>
                 <a href="/templates/contacto.html">Contacto</a>
-                <!-- <div class="busqueda">
+                <div class="busqueda">
                     <input class="busqueda" type="search" name="buscar_receta" id="buscar_receta" placeholder="Buscar receta">
                     <button class="btn" type="submit">Buscar</button>
-                </div> -->
+                </div>
             </nav>
-        </aside>
+        </aside> -->
     </header>
-    <div id="ruth">
-        <main>
-            <div id="google_translate_element" class="google"></div>
-            <h2>Receta Destacada</h2>
+    <main>
+        <div class="main">
+            <div class="men_text">
+                <h1>Disfruta y <span>Comparte</span><br>el arte del buen comer</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="/img/img_index.png" alt="Imagen_main">
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate corrupti atque 
+            quis architecto tempora cum quidem cupiditate, consequatur totam ducimus in recusandae ullam 
+            blanditiis natus accusamus eius minima debitis a facere incidunt iure magnam facilis. Voluptates 
+            voluptatibus, doloribus praesentium, magni doloremque necessitatibus dolorum repudiandae 
+            consequuntur in odio officia obcaecati.
+        </p>
+
+        <div class="main_btn">
+            <a href="#">Ver Mas</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+            <!-- <h2>Receta Destacada</h2>
             <div class="slider">
                 <div class="slider-slides">
                     <div v-for="receta in listaReceta">
@@ -83,9 +117,8 @@
                 <span>
                     <a href="#top"><i class="fa-solid fa-circle-up"></i></a>
                 </span>
-            </div>
-        </main>
-    </div>
+            </div> -->
+    </main>
     
     <footer>
         

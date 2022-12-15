@@ -1,23 +1,71 @@
 @import url(general.css);
 
 header{
-    position: sticky;
-    z-index: 997;
-    padding: 15px;
-    background-color: orange;
-    color: white;
-    height: 40%;
     width: 100%;
-    top: 0px;
 }
 
-.home{
-    padding: 20px 50px;
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: orange;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
 
-.logo{
+header nav .logo img{
     width: 80px;
-    height: 80px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+header nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: orangered;
+    display: block;
+    transition: 0.2s linear;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
+}
+
+header nav ul li a:hover{
+    color: orangered;
+}
+
+header nav .icon i{
+    font-size: 18px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header nav .icon i:hover{
+    color: orangered;
 }
 
 .logo:hover{
@@ -51,7 +99,7 @@ header{
     }
 }
 
-.panel{
+/* .panel{
     position: fixed;
     z-index: 998;
     top: 0;
@@ -88,8 +136,6 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
     text-align: center;
 }
 
@@ -126,4 +172,4 @@ header{
         width: 100%;
     }
 }
-
+ */
