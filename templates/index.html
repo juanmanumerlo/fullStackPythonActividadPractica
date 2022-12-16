@@ -50,27 +50,29 @@
         </aside> -->
     </header>
     <main>
-        <div class="main" id="home">
-            <div class="men_text">
-                <h1>Disfruta y <span>Comparte</span><br>el arte del buen comer</h1>
+        <section id="home">
+            <div class="main">
+                <div class="men_text">
+                    <h1>Disfruta y <span>Comparte</span><br>el arte del buen comer</h1>
+                </div>
+    
+                <div class="main_image">
+                    <img src="/img/img_index.png" alt="Imagen_main">
+                </div>
             </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate corrupti atque 
+                quis architecto tempora cum quidem cupiditate, consequatur totam ducimus in recusandae ullam 
+                blanditiis natus accusamus eius minima debitis a facere incidunt iure magnam facilis. Voluptates 
+                voluptatibus, doloribus praesentium, magni doloremque necessitatibus dolorum repudiandae 
+                consequuntur in odio officia obcaecati.
+            </p>
+            
+            <div class="main_btn">
+                <a href="#">Ver Mas</a>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>    
+        </section>
 
-            <div class="main_image">
-                <img src="/img/img_index.png" alt="Imagen_main">
-            </div>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate corrupti atque 
-            quis architecto tempora cum quidem cupiditate, consequatur totam ducimus in recusandae ullam 
-            blanditiis natus accusamus eius minima debitis a facere incidunt iure magnam facilis. Voluptates 
-            voluptatibus, doloribus praesentium, magni doloremque necessitatibus dolorum repudiandae 
-            consequuntur in odio officia obcaecati.
-        </p>
-        
-        <div class="main_btn">
-            <a href="#">Ver Mas</a>
-            <i class="fa-solid fa-angle-right"></i>
-        </div>
-        
         <div class="sobre_nosotros" id="sobre_nosotros">
             <div class="sobre_nosotros_main">
                 <div class="image">
@@ -81,16 +83,51 @@
                     <h1><span>Sobre</span>Nosotros </h1>
                     <h3>¿Quienes somos?</h3>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Temporibus dolor quisquam consequuntur? Pariatur neque minus 
-                        sit ducimus facere voluptate eligendi tempora a repellat asperiores 
-                        facilis odit aperiam explicabo dignissimos unde, nesciunt incidunt 
-                        vitae sapiente magni praesentium. Culpa eum optio dolore veniam 
-                        minus ad incidunt, quam dolor tempora architecto reiciendis vero.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error a veritatis totam 
+                        possimus eum ea ex porro libero dicta nisi sit distinctio, omnis facere, quas 
+                        provident. Ut incidunt eum velit minima ea consequuntur sapiente sed, dolores 
+                        eveniet minus, ipsum ex possimus aliquid veritatis aliquam neque voluptatum saepe. 
+                        Esse, doloribus commodi quae sunt aliquid, eos modi aspernatur nobis suscipit 
+                        cupiditate iusto deleniti ullam recusandae laudantium, adipisci labore harum sint 
+                        optio nihil minima reiciendis debitis necessitatibus et fugiat? Porro sapiente 
+                        eaque aut a nemo iste sunt laboriosam quam corporis accusantium, eveniet quasi 
+                        voluptate quod itaque nam ipsum, amet id, quisquam saepe ex!
                     </p>
                 </div>
             </div>
+            <a href="#" class="sobre_nosotros_btn">Contactenos</a>
         </div>
+
+        <div class="receta" id="recetas">
+            <h1>Nuestras <span>Recetas</span></h1>
+            <div class="menu_box">
+                <div v-for="receta in listaReceta" class="menu_card">
+                    <div v-if="receta.course">
+                        <div class="menu_image">
+                            <img src="/img/img_recetas.png" alt="receta">
+                        </div>
+                        <div class="small_card">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="menu_info">
+                            <h2>Comida</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, incidunt?
+                            </p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="recetas_btn">Ver Receta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- <h2>Receta Destacada</h2>
             <div class="slider">
                 <div class="slider-slides">

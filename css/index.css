@@ -7,7 +7,7 @@ body{
     background-image: url("/img/fondo.jpg");
 }
 
-main .main{
+section .main{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -15,14 +15,14 @@ main .main{
     top: 130px;
 }
 
-main .main .men_text h1{
+section .main .men_text h1{
     font-size: 60px;
     position: relative;
     top: -90px;
     left: 20px;
 }
 
-main .main .men_text h1 span{
+section .main .men_text h1 span{
     margin-left: 15px;
     color: orange;
     font-family: mv boli;
@@ -30,13 +30,13 @@ main .main .men_text h1 span{
     font-size: 70px;
 }
 
-main .main .main_image img{
+section .main .main_image img{
     width: 700px;
     position: relative;
     left: 70px;
 }
 
-main p{
+section p{
     width: 650px;
     text-align: justify;
     position: relative;
@@ -45,7 +45,7 @@ main p{
     line-height: 22px;
 }
 
-main .main_btn{
+section .main_btn{
     background: orange;
     position: relative;
     left: 190px;
@@ -55,25 +55,25 @@ main .main_btn{
     padding: 12px 25px;
 }
 
-main .main_btn a{
+section .main_btn a{
     color: white;
     margin-right: 5px;
     text-decoration: none;
 }
 
-main .main_btn i{
+section .main_btn i{
     color: white;
     transition: 0.3s;
 }
 
-main .main_btn:hover i{
+section .main_btn:hover i{
     transform: translateX(7px);
 }
 
 .sobre_nosotros{
     width: 100%;
     height: 100vh;
-    padding: 20px 0;
+    padding: 70px 0;
 }
 
 .sobre_nosotros .sobre_nosotros_main{
@@ -111,6 +111,82 @@ main .main_btn:hover i{
     margin-right: 30px;
     line-height: 22px;
 }
+
+.sobre_nosotros .sobre_nosotros_btn{
+    background: orange;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 52%;
+    bottom: 20px;
+}
+
+.receta{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.receta h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.receta h1 span{
+    color: orange;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.receta h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.receta .menu_box{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.receta .menu_box .menu_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.receta .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.receta .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.receta .menu_box .menu_card .menu_image:hover img{
+    transform: scale(1.1);
+}
+
+
 
 /* .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
