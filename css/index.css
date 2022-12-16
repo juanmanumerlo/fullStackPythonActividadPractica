@@ -70,6 +70,48 @@ main .main_btn:hover i{
     transform: translateX(7px);
 }
 
+.sobre_nosotros{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0;
+}
+
+.sobre_nosotros .sobre_nosotros_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre_nosotros .sobre_nosotros_main .image img{
+    width: 300px;
+    position: relative;
+    top: 60px;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1 span{
+    color: orange;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+
 /* .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}

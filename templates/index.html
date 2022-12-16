@@ -20,7 +20,7 @@
                 <img src="/img/Logo recetas.png" alt="Recetazos">
             </div>
             <ul>
-                <li><a ref="#home">Home</a> </li>
+                <li><a ref="#home">Inicio</a> </li>
                 <li><a ref="#recetas">Recetas</a></li>
                 <li><a ref="#sobre_nosotros">Sobre Nosotros</a></li>
                 <li><a ref="#contacto">Contacto</a></li>
@@ -50,7 +50,7 @@
         </aside> -->
     </header>
     <main>
-        <div class="main">
+        <div class="main" id="home">
             <div class="men_text">
                 <h1>Disfruta y <span>Comparte</span><br>el arte del buen comer</h1>
             </div>
@@ -65,12 +65,33 @@
             voluptatibus, doloribus praesentium, magni doloremque necessitatibus dolorum repudiandae 
             consequuntur in odio officia obcaecati.
         </p>
-
+        
         <div class="main_btn">
             <a href="#">Ver Mas</a>
             <i class="fa-solid fa-angle-right"></i>
         </div>
-            <!-- <h2>Receta Destacada</h2>
+        
+        <div class="sobre_nosotros" id="sobre_nosotros">
+            <div class="sobre_nosotros_main">
+                <div class="image">
+                    <img src="/img/img_cocinero.png" alt="cocinero">
+                </div>
+                
+                <div class="sobre_nosotros_text">
+                    <h1><span>Sobre</span>Nosotros </h1>
+                    <h3>¿Quienes somos?</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Temporibus dolor quisquam consequuntur? Pariatur neque minus 
+                        sit ducimus facere voluptate eligendi tempora a repellat asperiores 
+                        facilis odit aperiam explicabo dignissimos unde, nesciunt incidunt 
+                        vitae sapiente magni praesentium. Culpa eum optio dolore veniam 
+                        minus ad incidunt, quam dolor tempora architecto reiciendis vero.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <h2>Receta Destacada</h2>
             <div class="slider">
                 <div class="slider-slides">
                     <div v-for="receta in listaReceta">
@@ -107,7 +128,6 @@
                 <h2>Sobre nosotros</h2>
                 <div class="card_contenido">
                     <div class="description">
-                        <p>Somos un grupo de personas apasionadas por la cocina y queremos formar un comunidad donde podamos compartir nuestras recetas.</p>
                         <br>
                         <a class="btn" href="/templates/contacto.html">Contactenos</a>
                     </div>
