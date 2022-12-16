@@ -186,7 +186,16 @@ section .main_btn:hover i{
     transform: scale(1.1);
 }
 
-
+.receta .menu_box .menu_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -8px;
+    right: -8px;
+    opacity: 1;
+    border-radius: 7px;
+}
 
 /* .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
