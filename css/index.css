@@ -191,7 +191,7 @@ section .main_btn:hover i{
     height: 45px;
     float: right;
     position: relative;
-    top: -8px;
+    top: -240px;
     right: -8px;
     opacity: 1;
     border-radius: 7px;
