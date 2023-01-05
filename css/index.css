@@ -16,7 +16,7 @@ section .main{
 }
 
 section .main .men_text h1{
-    font-size: 60px;
+    font-size: 4rem;
     position: relative;
     top: -90px;
     left: 20px;
@@ -27,11 +27,11 @@ section .main .men_text h1 span{
     color: orange;
     font-family: mv boli;
     line-height: 22px;
-    font-size: 70px;
+    font-size: 5rem;
 }
 
 section .main .main_image img{
-    width: 700px;
+    width: 80vh;
     position: relative;
     left: 70px;
 }
