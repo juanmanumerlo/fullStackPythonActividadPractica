@@ -73,34 +73,9 @@
             </div>    
         </section>
 
-        <div class="sobre_nosotros" id="sobre_nosotros">
-            <div class="sobre_nosotros_main">
-                <div class="image">
-                    <img src="/img/img_cocinero.png" alt="cocinero">
-                </div>
-                
-                <div class="sobre_nosotros_text">
-                    <h1><span>Sobre</span>Nosotros </h1>
-                    <h3>¿Quienes somos?</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error a veritatis totam 
-                        possimus eum ea ex porro libero dicta nisi sit distinctio, omnis facere, quas 
-                        provident. Ut incidunt eum velit minima ea consequuntur sapiente sed, dolores 
-                        eveniet minus, ipsum ex possimus aliquid veritatis aliquam neque voluptatum saepe. 
-                        Esse, doloribus commodi quae sunt aliquid, eos modi aspernatur nobis suscipit 
-                        cupiditate iusto deleniti ullam recusandae laudantium, adipisci labore harum sint 
-                        optio nihil minima reiciendis debitis necessitatibus et fugiat? Porro sapiente 
-                        eaque aut a nemo iste sunt laboriosam quam corporis accusantium, eveniet quasi 
-                        voluptate quod itaque nam ipsum, amet id, quisquam saepe ex!
-                    </p>
-                </div>
-            </div>
-            <a href="#" class="sobre_nosotros_btn">Contactenos</a>
-        </div>
-
         <div id="ruth">
             <div class="receta" id="recetas">
-                <h1>Nuestras <span>Recetas</span></h1>
+                <h1><span>Nuestras</span>  Recetas</h1>
                 <div class="menu_box">
                     <div v-for="receta in listaReceta" class="menu_card">
                         <div v-if="receta.course">
@@ -128,39 +103,76 @@
                     </div>
                 </div>
             </div>
-            <!-- <h2>Receta Destacada</h2>
-                <div class="slider">
-                    <div class="slider-slides">
-                        <div v-for="receta in listaReceta">
-                            <div class="slider-slide active" id="receta">
-                                <a class="receta" href="/templates/receta.html" :data-id="receta.id"><h3>{{receta.title}}</h3></a>
-                                <img class="img" :src="receta.photoUrl" :alt="receta.title">
-                            </div>
-                        </div>
+
+            <div class="sobre_nosotros" id="sobre_nosotros">
+                <div class="sobre_nosotros_main">
+                    <div class="image">
+                        <img src="/img/img_cocinero.png" alt="cocinero">
                     </div>
-                    <div class="slider-btns">
-                        <a class="prev" href="#">&laquo;</a>
-                        <a class="next" href="#">&raquo;</a>
+                    
+                    <div class="sobre_nosotros_text">
+                        <h1>Sobre<span>Nosotros</span></h1>
+                        <h3>¿Quienes somos?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error a veritatis totam 
+                            possimus eum ea ex porro libero dicta nisi sit distinctio, omnis facere, quas 
+                            provident. Ut incidunt eum velit minima ea consequuntur sapiente sed, dolores 
+                            eveniet minus, ipsum ex possimus aliquid veritatis aliquam neque voluptatum saepe. 
+                            Esse, doloribus commodi quae sunt aliquid, eos modi aspernatur nobis suscipit 
+                            cupiditate iusto deleniti ullam recusandae laudantium, adipisci labore harum sint 
+                            optio nihil minima reiciendis debitis necessitatibus et fugiat? Porro sapiente 
+                            eaque aut a nemo iste sunt laboriosam quam corporis accusantium, eveniet quasi 
+                            voluptate quod itaque nam ipsum, amet id, quisquam saepe ex!
+                        </p>
                     </div>
                 </div>
-                <div class="clearfix"></div><div class="clearfix"></div>
-                <h2>Recetas más buscadas</h2>
-                <div class="clearfix"></div>
-                <div class="card_masbuscados">
-                    <div v-for="receta in listaReceta" class="mas_buscado">
-                        <div v-if="receta.course">
-                            <h3>{{receta.title}}</h3>
-                            <div class="card_contenido">
-                                <img class="imagen" :src="receta.photoUrl" :alt="receta.title">
-                                <div class="description">
-                                    <p>{{receta.description}}</p>
-                                    <br>
-                                    <a class="btn" href="/templates/receta.html">Ver Receta</a>
-                                </div>
-                            </div>
-                        </div>
+                <a href="#" class="sobre_nosotros_btn">Contactenos</a>
+            </div>
+
+            <div class="contacto" id="contacto">
+                <h1>Contacto</h1>
+                <div class="contacto_main">
+                    
+                    <div class="contacto_image">
+                        <img src="/img/img_contacto.png">
                     </div>
-                </div> -->
+
+                    <form action="https://formsubmit.co/facundo.martinez.fms@gmail.com" method="POST" id="form">
+                        <div class="grupo">
+                            <h3>Nombre y apellido</h3>
+                            <label for=""></label>
+                            <input type="text" name="Nombre" id="name" placeholder="Tu Nombre y Apellido"><span class="barra"></span>
+                            
+                        </div>
+                        <div class="grupo">
+                            <h3>Email</h3>
+                            <label for=""></label>
+                            <input type="email" name="email" id="name" placeholder="Tu Email"><span class="barra"></span>
+                            
+                        </div>
+                        <div class="grupo">
+                            <h3>Asunto</h3>
+                            <label for=""></label>
+                            <input type="text" name="asunto" id="name" placeholder="Tu Asunto" ><span class="barra"></span>
+                            
+                        </div>
+                        <div class="grupo">
+                            <h3>Mensaje</h3>
+                            <label for=""></label>
+                            <textarea class="field" id="name" cols="30" rows="10" placeholder="Tu Mensaje"></textarea><br>
+                            <br><p class="center-content">
+                        <button type="submit">ENVIAR</button>
+                        <p class="warnings" id="warnings"></p>
+    
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/templates/index.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        </div>
+                    </form>
+                    <script src="/js/contacto.js"></script>
+                </div>
+
+            </div>
+
         </div>
             <div class="btn_inicio">
                 <span>
