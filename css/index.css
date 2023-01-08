@@ -10,54 +10,54 @@ body{
 section .main{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
-    top: 130px;
+    top: 15vh;
 }
 
 section .main .men_text h1{
     font-size: 4rem;
     position: relative;
-    top: -90px;
-    left: 20px;
+    left: 5vw;
+    bottom: 10vh;
+
 }
 
 section .main .men_text h1 span{
     margin-left: 15px;
     color: orange;
-    font-family: mv boli;
+    font-family: 'Shadows Into Light', cursive;
     line-height: 22px;
     font-size: 5rem;
 }
 
 section .main .main_image img{
-    width: 80vh;
+    width: 40vw;
     position: relative;
-    left: 70px;
 }
 
 section p{
-    width: 650px;
+    width: 40vw;
     text-align: justify;
     position: relative;
-    left: 190px;
-    bottom: 220px;
-    line-height: 22px;
+    left: 10vw;
+    bottom: 25vh;
+    line-height: 1.5rem;
 }
 
 section .main_btn{
     background: orange;
     position: relative;
-    left: 190px;
-    bottom: 200px;
-    width: 150px;
+    left: 10vw;
+    bottom: 23vh;
+    width: 7vw;
     cursor: pointer;
-    padding: 12px 25px;
+    padding: 1vw;
 }
 
 section .main_btn a{
     color: white;
-    margin-right: 5px;
+    margin-right: 1rem;
     text-decoration: none;
 }
 
@@ -85,41 +85,39 @@ section .main_btn:hover i{
 .sobre_nosotros .sobre_nosotros_main .image img{
     width: 20vw;
     position: relative;
-    top: 60px;
 }
 
 .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1 span{
     color: orange;
     margin-left: 15px;
-    font-family: mv boli;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1{
-    font-size: 55px;
+    font-size: 4rem;
     position: relative;
-    bottom: 50px;
+    bottom: 10vh;
 }
 
 .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h3{
-    font-size: 30px;
+    font-size: 2.5rem;
     margin: 0 0 50px 0;
 }
 
 .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text p{
-    width: 650px;
+    width: 40vw;
     text-align: justify;
-    margin-right: 30px;
-    line-height: 22px;
+    margin-right: 10vw;
+    line-height: 1.5rem;
 }
 
 .sobre_nosotros .sobre_nosotros_btn{
     background: orange;
-    padding: 12px 25px;
+    padding: 1vw;
     text-decoration: none;
     color: white;
     position: relative;
-    left: 52%;
-    bottom: 20px;
+    left: 85vh;
 }
 
 .receta{
@@ -138,7 +136,7 @@ section .main_btn:hover i{
 .receta h1 span{
     color: orange;
     margin-right: 15px;
-    font-family: mv boli;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .receta .menu_box{
@@ -244,26 +242,6 @@ section .main_btn:hover i{
     transition: 0.3s;
 }
 
-.btn_inicio{
-    position: relative;
-    bottom: 70px;
-    background-color: orangered;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    float: right;   
-}
-
-.btn_inicio i{
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    font-size: 3rem;
-    justify-content: center;
-    align-items: center;
-    color: orange;
-}
-
 .contacto{
     width: 100%;
     height: 100vh;
@@ -274,8 +252,14 @@ section .main_btn:hover i{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: orange;
+    color: black;
     font-size: 55px;
+}
+
+.contacto span{
+    color: orange;
+    margin-right: 15px;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .contacto .contacto_main{
@@ -296,7 +280,7 @@ section .main_btn:hover i{
 .contacto .contacto_main form .grupo h3{
     line-height: 25px;
     padding: 10px;
-    color: orangered;
+    color: black;
 }
 
 .contacto .contacto_main form .grupo{
@@ -329,6 +313,15 @@ section .main_btn:hover i{
 
 .contacto .contacto_main form .grupo textarea:focus{
     border: 2px solid orange;
+}
+
+.contacto .contacto_main form button{
+    background: orange;
+    width: 20vw;
+    padding: 1vw;
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
 
 .google{

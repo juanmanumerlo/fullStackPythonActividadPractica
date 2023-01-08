@@ -1,14 +1,68 @@
 footer{
     background-color: orange;
-    color: white;
-    text-align: center;
-    align-items: center;
-    align-content: space-around;
-    padding: 1px;
-    height: 10vh;
+    padding: 1.5vw;
     width: 100%;
 }
 
-.redes_sociales{
-    color: white;
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: orangered;
+    font-size: 1.5rem;
+}
+
+footer .footer_main .footer_tag p{
+    margin-top: 0.5vw;
+}
+
+footer .footer_main .footer_tag .mapa_sitio{
+    display: block;
+    margin-top: 0.5vw;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+footer .footer_main .footer_tag i{
+    justify-content: center;
+    margin-right: 0.5vw;
+    margin-top: 1vw;
+    color: black;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: orangered;
+}
+
+footer .final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vw;
+}
+
+footer .final span{
+    color: orangered;
+    margin-left: 1vh;
+}
+
+::-webkit-scrollbar{
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: orange;
+    border-radius: 15px;
 }
