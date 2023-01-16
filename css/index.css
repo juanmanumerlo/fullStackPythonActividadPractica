@@ -331,24 +331,12 @@ section .main_btn:hover i{
     float: right;
 }
 
-@media (max-width: 780px){
-    
-    section .main{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: relative;
-        top: 10vh;
-    }
-    
-    section .main .men_text{
-        width: 60vw;
-    }
+@media (max-width: 1030px){
     
     section .main .men_text h1{
         font-size: 3rem;
         position: relative;
-        left: 3vw;    
+        left: 8vw;    
     }
     
     section .main .men_text h1 span{
@@ -359,16 +347,16 @@ section .main_btn:hover i{
     }
     
     section .main .main_image img{
-        width: 30vw;
+        width: 40vw;
         position: relative;
     }
     
     section p{
-        width: 80vw;
+        width: 50vw;
         text-align: justify;
         position: relative;
-        left: 5vw;
-        bottom: 25vh;
+        left: 10vw;
+        bottom: 12vh;
         line-height: 1.5rem;
     }
     
@@ -376,65 +364,44 @@ section .main_btn:hover i{
         background: orange;
         position: relative;
         left: 10vw;
-        bottom: 23vh;
-        width: 9vw;
+        bottom: 7vh;
+        width: 12vw;
         cursor: pointer;
         padding: 1vw;
     }
     
-    section .main_btn a{
-        color: white;
-        margin-right: 1rem;
-        text-decoration: none;
+    .receta .menu_box{
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    
-    section .main_btn i{
-        color: white;
-        transition: 0.3s;
-    }    
+
+    .receta{
+        padding: 15vh 1vw;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1{
+        bottom: 5vh;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h3{
+        margin: 0 0 5vh 0;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text p{
+        width: 60vw;
+        text-align: justify;
+        margin-right: 3vw;
+        line-height: 1.5rem;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .image img{
+        width: 30vw;
+    }
+
+    .sobre_nosotros .sobre_nosotros_btn{
+        left: 55vh;
+    }
 }
 
 @media (max-width: 650px) {
-    main{
-        margin-top: 5%;
-        margin-bottom: 20%;
-    }
-
-    .imagen_destacada{
-        height: 60%;
-        width: 75%;
-    }
     
-    .imagen{
-        height: 50%;
-        width: 50%;
-    }
-
-    .card_contenido{
-        display: block;
-    }
-
-    .card_masbuscados{
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 10px 0px;
-    }
-    
-    .card_masbuscados > .mas_buscado{
-        width: 100%;
-    }
-
-    .card_destacado{
-        padding: 30px 0px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .sobre_nosotros{
-        width: 100%;
-        height: 100%;
-        display: block;
-        padding: 30px 0px;
-    }
 } 
