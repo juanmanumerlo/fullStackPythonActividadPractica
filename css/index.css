@@ -90,6 +90,10 @@ section .main_btn:hover i{
     position: relative;
 }
 
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text{
+    width: 60vw;
+}
+
 .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1 span{
     color: orange;
     margin-left: 15px;
@@ -99,33 +103,30 @@ section .main_btn:hover i{
 .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1{
     font-size: 4rem;
     position: relative;
-    bottom: 10vh;
 }
 
 .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h3{
     font-size: 2.5rem;
-    margin: 0 0 50px 0;
 }
 
 .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text p{
-    width: 40vw;
+    width: 50vw;
     text-align: justify;
     margin-right: 10vw;
     line-height: 1.5rem;
+    padding: 5vh 0;
 }
 
-.sobre_nosotros .sobre_nosotros_btn{
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text .sobre_nosotros_btn{
     background: orange;
     padding: 1vw;
     text-decoration: none;
     color: white;
-    position: relative;
-    left: 85vh;
 }
 
 .receta{
     width: 100%;
-    padding: 15vh 10vh;
+    padding: 15vh 2vw;
 }
 
 .receta h1{
@@ -247,8 +248,7 @@ section .main_btn:hover i{
 
 .contacto{
     width: 100%;
-    height: 100vh;
-    padding: 20vh 0;
+    padding: 15vh 0;
 }
 
 .contacto h1{
