@@ -73,4 +73,16 @@ footer .final span{
     footer .footer_main{
         grid-template-columns: 1fr 1fr;
     }
+
+    footer .footer_main .footer_tag h2{
+        font-size: 1rem;
+    }
+    
+    footer .footer_main .footer_tag p{
+        font-size: 0.8rem;
+    }
+
+    footer .footer_main .footer_tag a{
+        font-size: 0.8rem;
+    }
 }
