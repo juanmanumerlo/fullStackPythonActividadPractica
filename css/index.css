@@ -454,11 +454,11 @@ section .main_btn:hover i{
     }
 
     section .main .men_text{
-        width: 100%;
+        width: 80%;
     }
 
     section .main .men_text h1{
-        left: 10vw;
+        left: 5vw;
         bottom: 8vh;
     }
     
@@ -467,14 +467,15 @@ section .main_btn:hover i{
     }
     
     section p{
-        width: 100%;
+        width: 80vw;
         top: 15vh;
         font-size: 1rem;
     }
     
     section .main_btn{
         top: 20vh;
-        width: 25vw;
+        width: 35vw;
+        text-align: center;
     }
 
     .receta{
