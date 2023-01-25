@@ -21,8 +21,8 @@ section .main .men_text{
 section .main .men_text h1{
     font-size: 4rem;
     position: relative;
-    left: 5vw;
-    bottom: 10vh;
+    left: 3vw;
+    bottom: 20vh;
 
 }
 
@@ -40,20 +40,20 @@ section .main .main_image img{
 }
 
 section p{
-    width: 40vw;
+    width: 60vw;
     text-align: justify;
     position: relative;
-    left: 10vw;
-    bottom: 25vh;
+    left: 5vw;
+    bottom: 23vh;
     line-height: 1.5rem;
 }
 
 section .main_btn{
     background: orange;
     position: relative;
-    left: 10vw;
-    bottom: 23vh;
-    width: 9vw;
+    left: 5vw;
+    bottom: 20vh;
+    width: 15vw;
     cursor: pointer;
     padding: 1vw;
 }
@@ -73,64 +73,13 @@ section .main_btn:hover i{
     transform: translateX(7px);
 }
 
-.sobre_nosotros{
-    width: 100%;
-    height: 100vh;
-    padding: 20vh 0;
-}
-
-.sobre_nosotros .sobre_nosotros_main{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.sobre_nosotros .sobre_nosotros_main .image img{
-    width: 20vw;
-    position: relative;
-}
-
-.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text{
-    width: 60vw;
-}
-
-.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1 span{
-    color: orange;
-    margin-left: 15px;
-    font-family: 'Shadows Into Light', cursive;
-}
-
-.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1{
-    font-size: 4rem;
-    position: relative;
-}
-
-.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h3{
-    font-size: 2.5rem;
-}
-
-.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text p{
-    width: 50vw;
-    text-align: justify;
-    margin-right: 10vw;
-    line-height: 1.5rem;
-    padding: 5vh 0;
-}
-
-.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text .sobre_nosotros_btn{
-    background: orange;
-    padding: 1vw;
-    text-decoration: none;
-    color: white;
-}
-
 .receta{
     width: 100%;
     padding: 15vh 2vw;
 }
 
 .receta h1{
-    font-size: 55px;
+    font-size: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,8 +110,8 @@ section .main_btn:hover i{
 }
 
 .receta .menu_box .menu_card .menu_image{
-    width: 300px;
-    height: 245px;
+    width: 20vw;
+    height: 30vh;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -240,10 +189,61 @@ section .main_btn:hover i{
     justify-content: center;
     text-decoration: none;
     color: white;
-    background: black;
-    padding: 8px 10px;
-    margin: 0 80px;
+    background: orangered;
+    width: 80%;
+    padding: 1vw 1vh;
+    margin: 0 4vh;
     transition: 0.3s;
+}
+
+.sobre_nosotros{
+    width: 100%;
+    padding: 20vh 0;
+}
+
+.sobre_nosotros .sobre_nosotros_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre_nosotros .sobre_nosotros_main .image img{
+    width: 20vw;
+    position: relative;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text{
+    width: 60vw;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1 span{
+    color: orange;
+    margin-left: 15px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1{
+    font-size: 4rem;
+    position: relative;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h3{
+    font-size: 2.5rem;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text p{
+    width: 50vw;
+    text-align: justify;
+    margin-right: 10vw;
+    line-height: 1.5rem;
+    padding: 5vh 0;
+}
+
+.sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text .sobre_nosotros_btn{
+    background: orange;
+    padding: 1vw;
+    text-decoration: none;
+    color: white;
 }
 
 .contacto{
@@ -256,7 +256,7 @@ section .main_btn:hover i{
     align-items: center;
     justify-content: center;
     color: black;
-    font-size: 55px;
+    font-size: 4rem;
 }
 
 .contacto span{
@@ -331,43 +331,22 @@ section .main_btn:hover i{
     float: right;
 }
 
-@media (max-width: 1030px){
+@media (max-width: 1005px){
     
     section .main .men_text h1{
         font-size: 3rem;
-        position: relative;
-        left: 8vw;    
-    }
-    
-    section .main .men_text h1 span{
-        margin-left: 15px;
-        color: orange;
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 5rem;
-    }
-    
-    section .main .main_image img{
-        width: 40vw;
-        position: relative;
     }
     
     section p{
         width: 50vw;
-        text-align: justify;
-        position: relative;
         left: 10vw;
         bottom: 12vh;
-        line-height: 1.5rem;
     }
     
     section .main_btn{
-        background: orange;
-        position: relative;
         left: 10vw;
         bottom: 7vh;
         width: 12vw;
-        cursor: pointer;
-        padding: 1vw;
     }
     
     .receta .menu_box{
@@ -388,9 +367,7 @@ section .main_btn:hover i{
 
     .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text p{
         width: 60vw;
-        text-align: justify;
         margin-right: 3vw;
-        line-height: 1.5rem;
     }
 
     .sobre_nosotros .sobre_nosotros_main .image img{
@@ -402,6 +379,159 @@ section .main_btn:hover i{
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
+
+    section .main .men_text h1{
+        font-size: 2.5rem;
+        bottom: 18vh;
+    }
     
+    section .main .men_text h1 span{
+        font-size: 3rem;
+    }
+    
+    section p{
+        bottom: 20vh;
+        font-size: 0.9rem;
+    }
+    
+    section .main_btn{
+        bottom: 18vh;
+        width: 18vw;
+    }
+
+    .receta h1{
+        font-size: 2.5rem;
+    }
+    
+    .receta .menu_box{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1{
+        bottom: 5vh;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h3{
+        margin: 0 0 5vh 0;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text p{
+        width: 60vw;
+        margin-right: 3vw;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .image img{
+        width: 30vw;
+    }
+
+    .sobre_nosotros .sobre_nosotros_btn{
+        left: 55vh;
+    }
+    
+    .contacto h1{
+        font-size: 2.5rem;
+    }
+
+    .contacto .contacto_main form .grupo input{
+        width: 50vw;
+    }
+    
+    .contacto .contacto_main form .grupo textarea{
+        width: 50vw;
+    }
+} 
+
+@media (max-width: 576px) {
+
+    section{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    section .main{
+        top: 20vh;
+    }
+
+    section .main .men_text{
+        width: 100%;
+    }
+
+    section .main .men_text h1{
+        left: 10vw;
+        bottom: 8vh;
+    }
+    
+    section .main .main_image img{
+        display: none;
+    }
+    
+    section p{
+        width: 100%;
+        top: 15vh;
+        font-size: 1rem;
+    }
+    
+    section .main_btn{
+        top: 20vh;
+        width: 25vw;
+    }
+
+    .receta{
+        padding: 5vh 0;
+    }
+
+    .receta .menu_box{
+        margin: 0;
+        padding: 0 10% ;
+        grid-template-columns: 1fr;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text{
+        width: 90vw;
+    }
+    
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h1{
+        font-size: 3rem;
+        bottom: 5vh;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text h3{
+        font-size: 2rem;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .sobre_nosotros_text p{
+        width: 90vw;
+        margin-right: 3vw;
+    }
+
+    .sobre_nosotros .sobre_nosotros_main .image img{
+        display: none;
+    }
+
+    .contacto{
+        width: 100vw;
+        padding: 10vh 0;
+    }
+    
+    .contacto h1{
+        padding-left: 5vw;
+        font-size: 2rem;
+    }
+
+    .contacto .contacto_main .contacto_image img{
+        display: none;
+    }
+
+    .contacto .contacto_main form{
+        width: 90vw;
+    }
+
+    .contacto .contacto_main form .grupo input{
+        width: 80vw;
+    }
+    
+    .contacto .contacto_main form .grupo textarea{
+        width: 80vw;
+    }
 } 

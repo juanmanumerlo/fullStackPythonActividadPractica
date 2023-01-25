@@ -28,7 +28,7 @@ header nav ul{
 
 header nav ul li{
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 2vw;
 }
 
 header nav ul li a{
@@ -163,12 +163,22 @@ header nav .icon i:hover{
     align-items: center;
 }*/
 
-@media (max-width: 650px) {
-    .panel{
-        top: 0;
-        bottom: 0;
-        left: 0%;
-        right: 0;
-        width: 100%;
+@media (max-width: 576px) {
+    
+    header nav ul li{
+        margin: 0 0.5vw;
+    }
+
+    header nav ul li a{
+        font-weight: 250;
+        font-size: 0.9rem;
+    }
+
+    header nav .icon i{
+        display: none;
+    }
+
+    header nav .logo img{
+        width: 5vw;
     }
 }

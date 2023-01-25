@@ -11,6 +11,7 @@ footer .footer_main{
 
 footer .footer_main .footer_tag{
     text-align: center;
+    padding: 2vh 0;
 }
 
 footer .footer_main .footer_tag h2{
@@ -65,4 +66,11 @@ footer .final span{
 ::-webkit-scrollbar-thumb{
     background: orange;
     border-radius: 15px;
+}
+
+@media (max-width: 576px){
+    
+    footer .footer_main{
+        grid-template-columns: 1fr 1fr;
+    }
 }
