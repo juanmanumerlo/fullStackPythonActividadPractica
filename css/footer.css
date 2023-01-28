@@ -71,7 +71,7 @@ footer .final span{
 @media (max-width: 576px){
     
     footer .footer_main{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     footer .footer_main .footer_tag h2{
