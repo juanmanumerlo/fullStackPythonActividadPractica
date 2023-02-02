@@ -42,6 +42,12 @@ footer .footer_main .footer_tag i:hover{
     color: orangered;
 }
 
+footer .footer_main .footer_tag a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
 footer .final{
     display: flex;
     align-items: center;
